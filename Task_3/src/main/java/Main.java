@@ -4,7 +4,7 @@ public class Main {
         //Data primitives in Java - live in Stack
         char letterY = 'Y';
         System.out.println(letterY);
-        byte byteValue = 126;
+        byte byteValue = 127;
         System.out.println(byteValue);
         short shortValue = 32767;
         System.out.println(shortValue);
