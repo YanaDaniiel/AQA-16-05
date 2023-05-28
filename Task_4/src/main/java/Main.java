@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
         //Task_1
         System.out.println("Task_1");
@@ -24,11 +25,10 @@ public class Main {
         //Task_3
         System.out.println("Task_3");
         System.out.println("Please enter a positive two-digit number");
-        Scanner scannerTask3 = new Scanner(System.in);
         int tensTask3;
         int onesTask3;
-        try {
-            int inputTask3 = Integer.parseInt(scannerTask3.nextLine());
+        try{
+            int inputTask3 = scanner.nextInt();
             if (inputTask3 >= 10 && inputTask3 <= 99) {
                 tensTask3 = inputTask3 / 10;
                 onesTask3 = inputTask3 % 10;
@@ -46,11 +46,10 @@ public class Main {
         //Task_4
         System.out.println("Task_4");
         System.out.println("Please enter a positive two-digit number");
-        Scanner scannerTask4 = new Scanner(System.in);
         try {
             int tensTask4;
             int onesTask4;
-            int inputTask4 = Integer.parseInt(scannerTask4.nextLine());
+            int inputTask4 = scanner.nextInt();
             if (inputTask4 >= 10 && inputTask4 <= 99) {
                 onesTask4 = inputTask4 % 10;
                 tensTask4 = inputTask4 - onesTask4;
@@ -68,11 +67,10 @@ public class Main {
         //Task_5
         System.out.println("Task_5");
         System.out.println("Please enter a positive two-digit number");
-        Scanner scannerTask5 = new Scanner(System.in);
         try {
             int tensTask5;
             int onesTask5;
-            int inputTask5 = Integer.parseInt(scannerTask5.nextLine());
+            int inputTask5 = scanner.nextInt();
             if (inputTask5 >= 10 && inputTask5 <= 99) {
                 tensTask5 = inputTask5 / 10;
                 onesTask5 = inputTask5 % 10;
@@ -90,9 +88,8 @@ public class Main {
         //Task_6
         System.out.println("Task_6");
         System.out.println("Please enter any valid number");
-        Scanner scannerTask6 = new Scanner(System.in);
         try {
-            int inputTask6 = Integer.parseInt(scannerTask6.nextLine());
+            int inputTask6 = scanner.nextInt();
             if (inputTask6 == 0) {
                 System.out.println("Zero");
             } else if (inputTask6 > 0) {
@@ -107,10 +104,9 @@ public class Main {
         //Task_7
         System.out.println("Task_7");
         System.out.println("Please enter any three-digit positive number");
-        Scanner scannerTask7 = new Scanner(System.in);
         try {
             int inputTask7Minused;
-            int inputTask7 = Integer.parseInt(scannerTask7.nextLine());
+            int inputTask7 = scanner.nextInt();
             if (inputTask7 >= 100 && inputTask7 <= 999) {
                 inputTask7Minused = inputTask7 - 1;
                 System.out.println(inputTask7Minused);
@@ -127,9 +123,8 @@ public class Main {
         //Task_8
         System.out.println("Task_8");
         System.out.println("Please enter any two-digit positive number");
-        Scanner scannerTask8 = new Scanner(System.in);
         try {
-            int inputTask8 = Integer.parseInt(scannerTask8.nextLine());
+            int inputTask8 = scanner.nextInt();
             int tensTask8;
             int onesTask8;
             int mulTask8;
@@ -153,7 +148,7 @@ public class Main {
         } catch (NumberFormatException e) {
             System.out.println(e.getMessage());
         } finally {
-            scannerTask8.close();
+            scanner.close();
         }
     }
 }
