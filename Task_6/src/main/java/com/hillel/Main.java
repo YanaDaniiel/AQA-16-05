@@ -52,22 +52,21 @@ public class Main {
         float average1;
         float average2;
 
-        for (int i = 0; i < arrFirstTask3.length; i++) {
-            arrFirstTask3[i] = random.nextInt(0, 5);
+        int m;
+        for (m = 0; m < arrFirstTask3.length; m++) {
+            arrFirstTask3[m] = random.nextInt(0, 5);
+            arrSecondTask3[m] = random.nextInt(0, 5);
+            sum1 += arrFirstTask3[m];
+            sum2 += arrSecondTask3[m];
         }
         System.out.println("Task 3");
         for (int a : arrFirstTask3) {
             System.out.printf(a + " ");
-            sum1 += a;
         }
         average1 = sum1 / arrFirstTask3.length;
         System.out.printf("%n");
-        for (int i = 0; i < arrFirstTask3.length; i++) {
-            arrSecondTask3[i] = random.nextInt(0, 5);
-        }
         for (int b : arrSecondTask3) {
             System.out.printf(b + " ");
-            sum2 += b;
         }
         average2 = sum2 / arrSecondTask3.length;
         System.out.printf("%n");
