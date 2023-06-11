@@ -1,6 +1,5 @@
 package Utils;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Helper {
@@ -20,7 +19,7 @@ public class Helper {
                     } else {
                         System.out.println("Division by " + num2 + " is not allowed");
                         System.out.println("Please enter a different num2");
-                        num2 = scanner.nextInt();
+                        num2 = getInt(scanner);
                     }
                 default:
                     System.out.println("Please enter a valid operation");
@@ -43,11 +42,6 @@ public class Helper {
     }
 
     public static char getOperation(Scanner scanner) {
-        try {
             return scanner.next().charAt(0);
-        } catch (InputMismatchException e) {
-            System.out.println(e.getMessage());
-        }
-        return 0;
     }
 }
