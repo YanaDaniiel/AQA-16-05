@@ -30,12 +30,16 @@ public class Helper {
     }
 
     public static int getInt(Scanner scanner) {
-        try {
-            return scanner.nextInt();
-        } catch (InputMismatchException e) {
-            System.out.println(e.getMessage());
+        boolean num = scanner.hasNextInt();
+        while (true) {
+            if (num) {
+                return scanner.nextInt();
+            } else {
+                System.out.println("Please enter number");
+                scanner.next();
+            }
+            num = scanner.hasNextInt();
         }
-        return 0;
     }
 
     public static char getOperation(Scanner scanner) {
