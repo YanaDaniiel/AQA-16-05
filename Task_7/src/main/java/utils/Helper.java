@@ -1,10 +1,9 @@
-package Utils;
+package utils;
 
 import java.util.Scanner;
 
 public class Helper {
-    public static int calc(int num1, int num2, char operation) {
-        Scanner scanner = new Scanner(System.in);
+    public static int calc(int num1, int num2, char operation, Scanner scanner) {
         while (true) {
             switch (operation) {
                 case '+':
@@ -42,6 +41,8 @@ public class Helper {
     }
 
     public static char getOperation(Scanner scanner) {
-            return scanner.next().charAt(0);
+        return scanner.next().charAt(0);
     }
+
+
 }

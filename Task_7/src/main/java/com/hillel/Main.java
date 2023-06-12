@@ -1,6 +1,6 @@
 package com.hillel;
 
-import Utils.Helper;
+import utils.Helper;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class Main {
         int y = Helper.getInt(scanner);
         System.out.println("Please enter the operation");
         char operation = Helper.getOperation(scanner);
-        int result = Helper.calc(x, y, operation);
+        int result = Helper.calc(x, y, operation, scanner);
         System.out.println(result);
         scanner.close();
     }
