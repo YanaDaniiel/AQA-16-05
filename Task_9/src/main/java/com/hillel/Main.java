@@ -18,6 +18,7 @@ public class Main {
         String subject = scanner.nextLine();
         Task_2.getMarks(surname, mark, subject);
 
+        System.out.println("Please enter the string for analysis");
         String symbols = scanner.nextLine();
         Task_3.findMinString(symbols);
 
