@@ -1,9 +1,10 @@
 package com.hillel;
 
-import com.birds.Bird;
 import com.birds.Eagle;
 import com.birds.Flamingo;
 import com.enums.Voice;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,5 +20,13 @@ public class Main {
         flamingo.getFlamingo();
         flamingo.calculateOffspringsYearly();
         System.out.println(flamingo.toString());
+
+        // I want to print the Voice enum values:
+        System.out.println("Printing_way_1");
+        System.out.println(java.util.Arrays.asList(Voice.values()));
+        System.out.println("Printing_way_2");
+        Voice.printEnum();
+        System.out.println("Printing_way_3");
+        System.out.println(Arrays.toString(Voice.values()));
     }
 }

@@ -1,9 +1,10 @@
 package com.enums;
 
-public enum Voice {
+public enum Voice { //the sounds produced by birds/animals are not limited, but normally represented by a specific sound
     WHISTLE("whistle"),
     HONK("honk"),
-    HOWL("howl");
+    HOWL("howl"),
+    ROAR("roar");
     private String voice;
 
     public String getVoice() {
@@ -24,9 +25,8 @@ public enum Voice {
                 '}';
     }
 
-    public void printEnum(){
-        System.out.println("voices: " + voice);
+    public static void printEnum() {
+        for (Voice voice : Voice.values())
+            System.out.println("voices: " + voice);
     }
-
-
 }
