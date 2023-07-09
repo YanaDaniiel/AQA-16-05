@@ -1,10 +1,12 @@
 package com.birds;
 
+import com.enums.Voice;
+
 public class Eagle extends Bird {
     private String family;
 
-    public Eagle(String name, String color, int age, String skinCovering, String[] food, int offsprings, String family) {
-        super(name, color, age, skinCovering, food, offsprings);
+    public Eagle(String name, String color, int age, String skinCovering, String[] food, int offsprings, Voice voice, String family) {
+        super(name, color, age, skinCovering, food, offsprings, voice);
         setFamily(family);
     }
 
@@ -32,7 +34,8 @@ public class Eagle extends Bird {
         }
         System.out.println("Name: " + super.getName() + ", color: " + super.getColor() + ", age: " + super.getAge()
                 + ", skin covering: " + super.getSkinCovering() + ", eats: " + eagleFood
-                + ", no of offsprings born yearly: " + super.getOffsprings() + ", family type: " + family);
+                + ", no of offsprings born yearly: " + super.getOffsprings() + ", voice: " + super.getVoice()
+                + ", family type: " + family);
     }
 
     @Override
