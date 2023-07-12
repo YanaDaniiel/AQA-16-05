@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //Task_1
         System.out.println("Task_1");
         int centimeter = 10;
         int dime = 25;
@@ -14,15 +13,13 @@ public class Main {
         System.out.println(centimeterToDime + " dimes");
         System.out.println(dimeToCentimeter + " centimeters");
 
-        //Task_2
         System.out.println("Task_2");
         float earnedByVasya = 5000f;
         float parentsBonus = 5000f;
         float euroCourse = 28f;
-        float savingsForVacationInEuro = (earnedByVasya + parentsBonus) / euroCourse;
-        System.out.println(savingsForVacationInEuro);
+        float savings = (earnedByVasya + parentsBonus) / euroCourse;
+        System.out.println(savings);
 
-        //Task_3
         System.out.println("Task_3");
         System.out.println("Please enter a positive two-digit number");
         int tensTask3;
@@ -43,7 +40,6 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-        //Task_4
         System.out.println("Task_4");
         System.out.println("Please enter a positive two-digit number");
         try {
@@ -64,7 +60,6 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-        //Task_5
         System.out.println("Task_5");
         System.out.println("Please enter a positive two-digit number");
         try {
@@ -85,7 +80,6 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-        //Task_6
         System.out.println("Task_6");
         System.out.println("Please enter any valid number");
         try {
@@ -101,15 +95,14 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-        //Task_7
         System.out.println("Task_7");
         System.out.println("Please enter any three-digit positive number");
         try {
-            int inputTask7Minused;
+            int inputTask7Min;
             int inputTask7 = scanner.nextInt();
             if (inputTask7 >= 100 && inputTask7 <= 999) {
-                inputTask7Minused = inputTask7 - 1;
-                System.out.println(inputTask7Minused);
+                inputTask7Min = inputTask7 - 1;
+                System.out.println(inputTask7Min);
             } else if (inputTask7 / 100 == 0) {
                 System.out.println("The three-digit number cannot start with 0 or be less than 100");
 
@@ -120,7 +113,6 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-        //Task_8
         System.out.println("Task_8");
         System.out.println("Please enter any two-digit positive number");
         try {
