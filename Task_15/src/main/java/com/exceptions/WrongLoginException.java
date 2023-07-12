@@ -15,7 +15,7 @@ public class WrongLoginException extends IOException {
         this.inputLogin = inputLogin;
     }
 
-    public String beautifyLogin() {
+    public String beautifyLoginException() {
         return String.format("%s ,you entered this as a login : %s", getMessage(), inputLogin);
     }
 }

@@ -27,10 +27,10 @@ public class LoginUtils {
             return (checkLogin(login) && checkPassword(password, confirmPassword));
         } catch (WrongLoginException e) {
             System.out.println("WrongLoginException e");
-            System.out.println(e.beautifyLogin());
+            System.out.println(e.beautifyLoginException());
         } catch (WrongPasswordException e) {
             System.out.println("WrongPasswordException e");
-            System.out.println(e.beautifyPassword());
+            System.out.println(e.beautifyPasswordException());
         } catch (Exception e) {
             System.out.println("Exception e");
             System.out.println(e.getMessage());

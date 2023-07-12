@@ -15,7 +15,7 @@ public class WrongPasswordException extends IOException {
         this.inputPassword = inputPassword;
     }
 
-    public String beautifyPassword() {
+    public String beautifyPasswordException() {
         return String.format("%s, you entered this as a password : %s", getMessage(), inputPassword);
     }
 }
