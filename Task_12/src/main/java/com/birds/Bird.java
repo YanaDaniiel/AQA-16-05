@@ -10,9 +10,11 @@ public abstract class Bird {
     private String skinCovering;
     private String[] food;
     private int offsprings;
+
     private Voice voice;
 
     public Bird(String name, String color, int age, String skinCovering, String[] food, int offsprings, Voice voice) {
+
         setName(name);
         setColor(color);
         setAge(age);
@@ -96,11 +98,11 @@ public abstract class Bird {
     public int getOffsprings() {
         return offsprings;
     }
-
+  
     public Voice getVoice(){
         return voice;
-    }
-
+}
+  
     protected abstract int calculateOffspringsYearly();
 
     @Override
