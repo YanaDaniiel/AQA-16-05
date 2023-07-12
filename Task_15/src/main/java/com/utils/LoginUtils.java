@@ -28,15 +28,13 @@ public class LoginUtils {
         } catch (WrongLoginException e) {
             System.out.println("WrongLoginException e");
             System.out.println(e.beautifyLogin());
-            return false;
         } catch (WrongPasswordException e) {
             System.out.println("WrongPasswordException e");
             System.out.println(e.beautifyPassword());
-            return false;
         } catch (Exception e) {
             System.out.println("Exception e");
             System.out.println(e.getMessage());
-            return false;
         }
+        return false;
     }
 }
