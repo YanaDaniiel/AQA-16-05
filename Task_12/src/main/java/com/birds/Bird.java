@@ -1,5 +1,7 @@
 package com.birds;
 
+import com.enums.Voice;
+
 public abstract class Bird {
 
     private String name;
@@ -9,13 +11,17 @@ public abstract class Bird {
     private String[] food;
     private int offsprings;
 
-    public Bird(String name, String color, int age, String skinCovering, String[] food, int offsprings) {
+    private Voice voice;
+
+    public Bird(String name, String color, int age, String skinCovering, String[] food, int offsprings, Voice voice) {
+
         setName(name);
         setColor(color);
         setAge(age);
         setSkinCovering(skinCovering);
         setFood(food);
         setOffsprings(offsprings);
+        this.voice = voice;
     }
 
     public Bird() {
@@ -92,7 +98,11 @@ public abstract class Bird {
     public int getOffsprings() {
         return offsprings;
     }
-
+  
+    public Voice getVoice(){
+        return voice;
+}
+  
     protected abstract int calculateOffspringsYearly();
 
     @Override

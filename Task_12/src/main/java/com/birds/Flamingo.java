@@ -1,10 +1,13 @@
 package com.birds;
 
+import com.enums.Voice;
+
 public class Flamingo extends Bird {
     String family;
 
-    public Flamingo(String name, String color, int age, String skinCovering, String[] food, int offsprings, String family) {
-        super(name, color, age, skinCovering, food, offsprings);
+    public Flamingo(String name, String color, int age, String skinCovering, String[] food, int offsprings, Voice voice,
+                    String family) {
+        super(name, color, age, skinCovering, food, offsprings, voice);
         setFamily(family);
     }
 
@@ -32,7 +35,8 @@ public class Flamingo extends Bird {
         }
         System.out.println("Name: " + super.getName() + ", color: " + super.getColor() + ", age: " + super.getAge()
                 + ", skin covering: " + super.getSkinCovering() + ", eats: " + flamingoFood +
-                ", no of offsprings born yearly: " + super.getOffsprings() + ", family type: " + family);
+                ", no of offsprings born yearly: " + super.getOffsprings() + ", voice: " + Voice.HONK +
+                ", family type: " + family);
     }
 
     @Override
