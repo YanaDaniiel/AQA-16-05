@@ -5,7 +5,6 @@ import com.product.ProductMarket;
 
 public class Main {
     public static void main(String[] args) {
-
         ProductMarket productList = new ProductMarket();
 
         productList.addProduct(new Product("Tomato", 4));
@@ -17,5 +16,12 @@ public class Main {
         System.out.println(productList.printProductPricesOver10());
         System.out.println(productList.printProductPricesBelow5());
         System.out.println(productList.printProductPrices());
+
+        //sorting via Comparator - by price
+        System.out.println(productList.sortProductsByPriceComparator());
+        //sorting via Comparator - by name
+        System.out.println(productList.sortProductsByNameComparator());
+        //sorting via Comparable - by price
+        System.out.println(productList.sortProductsByPriceComparable());
     }
 }

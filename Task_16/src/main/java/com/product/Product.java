@@ -1,9 +1,9 @@
 package com.product;
 
-public class Product {
+public class Product implements Comparable<Product> {
 
     private String name;
-    private float price;
+    private int price;
 
     public Product(String name, int price) {
         this.name = name;
@@ -19,7 +19,7 @@ public class Product {
         return name;
     }
 
-    public float getPrice() {
+    public int getPrice() {
         return price;
     }
 
@@ -30,4 +30,10 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public int compareTo(Product p) {
+        return Integer.compare(price, p.getPrice());
+    }
 }
+
